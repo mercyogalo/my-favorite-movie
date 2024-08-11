@@ -7,6 +7,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
+    <style>
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+      }
+      .image-height{
+        height: 550px;
+        width: 100%;
+      }
+      @media (max-width: 576px) {
+        .centered{
+          font-size: 30px;
+        }
+        .image-height{
+          height: 300px;
+        }
+      }
+    </style>
 </head>
 <body>
     
@@ -37,17 +58,40 @@
     </div>
 </div>
 
-
-
 <div class="container">
   <div class="row">
+    <div class="col-sm-12">
+
     
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/449/original/Central_African_Republic___Culture__History____People.jpeg?1723369766" class="d-block  img-fluid  image-height" alt="...">
+      <a class="centered btn ">Centered</a>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/447/original/uganda__africa__poverty__young__black__life__child__poor__children__rural__village.jpeg?1723369697" class="d-block  img-fluid image-height" alt="...">
+      <div class="centered">Centered</div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/446/original/Inspiration_-_The_Magic_Onions.jpeg?1723369687" class="d-block  img-fluid image-height" alt="...">
+      <div class="centered">Centered</div>
+    </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-
-
-
+</div>
+</div>
+</div>
 
 
 </body>
